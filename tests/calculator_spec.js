@@ -35,4 +35,22 @@
             expect(Calculator.subtract(5, 10, 29)).toEqual(-50);
         });
     });
+
+    describe("when reset current", function () {
+
+        it("should reset current when called", function () {
+            Calculator.current = 20;
+            Calculator.reset();
+            expect(Calculator.current).toEqual(0);
+        });
+
+        it("integration test: should reset current when called", function () {
+            Calculator.add(5);
+            Calculator.subtract(10, 29);
+            Calculator.reset();
+            expect(Calculator.current).toEqual(0);
+        });
+
+    });
+
 });
