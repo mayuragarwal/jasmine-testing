@@ -14,9 +14,15 @@
             expect(Calculator.add(5)).toEqual(5);
         });
 
-    it("should add numbers again correctly", function () {
-        expect(Calculator.add(5)).toEqual(5);
-        expect(Calculator.add(5)).toEqual(10);
+        it("should add numbers again correctly", function () {
+            expect(Calculator.add(5)).toEqual(5);
+            expect(Calculator.add(5)).toEqual(10);
+        });
+
+        it("should add multiple numbers correctly", function () {
+            expect(Calculator.add(1, 5)).toEqual(6);
+            expect(Calculator.add(5, 10, 29)).toEqual(50);
+        });
     });
 
     describe("when subtracting numbers", function () {
