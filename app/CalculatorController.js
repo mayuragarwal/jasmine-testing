@@ -13,4 +13,8 @@ myApp.controller("CalculatorController", function ($scope) {
     $scope.Add = function () {
         $scope.Current += parseFloat($scope.TextInput);
     }
+
+    $scope.Subtract = function () {
+        $scope.Current -= parseFloat($scope.TextInput);
+    }
 });
