@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="../lib/angular/angular.min.js"></script>
+    <script src="../app/CalculatorController.js"></script>
+</head>
+<body ng-app="Calculator">
+    <div ng-controller="CalculatorController">
+        Enter a value: <input type="text" name="txtInput" value="" ng-model="TextInput" /><br /><br />
+        Result: <input type="text" name="name" ng-model="Current" disabled /><br /><br />
+        <input id="BtnAdd" type="button" value="Add" ng-click="Add()" />
+    </div>
+</body>
+</html>
