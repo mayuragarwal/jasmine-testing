@@ -1,6 +1,5 @@
 # jasmine-testing
-Sample application to learn github and unit testing with jasmine
+Sample application to learn github and unit testing with jasmine and ngMock
 
-This would be my first commit for readme :P
-This would be temporary by the way.
-Rebase commit.
+The code has sample for normal javascript testing with jasmine.
+Now the code includes angular js testing with jasmine and ng-mock.
